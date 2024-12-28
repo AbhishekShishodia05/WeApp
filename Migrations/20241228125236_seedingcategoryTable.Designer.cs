@@ -2,6 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using WeApp.Data;
 
@@ -10,9 +11,11 @@ using WeApp.Data;
 namespace WeApp.Migrations
 {
     [DbContext(typeof(ApplicatioDBContext))]
-    partial class ApplicatioDBContextModelSnapshot : ModelSnapshot
+    [Migration("20241228125236_seedingcategoryTable")]
+    partial class seedingcategoryTable
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
