@@ -1,5 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using WeApp.Data;
+using WeApp.DataAccess.Data;
 using WeApp.Models;
 
 namespace WeApp.Controllers
